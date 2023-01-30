@@ -1,13 +1,14 @@
-// ask user to select a folder
+// ask user to select a directory
 dir = getDirectory("Select A folder");
-// get the list of files (& folders) in it
+
+// get the list of files and directories in it
 fileList = getFileList(dir);
-// prepare a folder to output the images
-output_dir = dir + File.separator + " output" + File.separator ;
+
+// prepare a directory to output the images
+output_dir = dir + File.separator + "split_output" + File.separator;
 File.makeDirectory(output_dir);
 
 
-//activate batch mode
 setBatchMode(true);
 
 // LOOP to process the list of files
